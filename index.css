@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+}
+
+.navbar .logo{
+    color: purple;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 5px 5px 5px 25px;
+    cursor: pointer;
+}
+
+.navitems ul{
+    margin-right: 40px;
+}
+
+.navitems li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navitems li a{
+    text-decoration: none;
+    color: purple;
+    padding: 10px 13px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+}
+
+.navitems li a:hover{
+    color: white;
+    background-color: purple;
+}
+
+/* Hoem Section  */
+
+.home{
+    border: 1px solid rgb(243, 237, 237);
+    margin: 30px 10px;
+    box-shadow: 1px 1px 15px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;  
+    background-color: rgba(0, 255, 255, 0.596);
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px 80px;
+    padding: 20px;
+    width: 50%;
+}
+
+.home-first-h{
+    font-size: 2.4rem;
+    color: purple;
+    text-shadow: 1px 1px 2px rgb(129, 121, 121);
+}
+
+.home-second-h{
+    font-size: 1.7rem;
+    color: rgb(58, 43, 43);
+    
+}
+
+.home-third-h{
+    font-size: 1.4rem;
+    color: rgb(32, 12, 12);
+}
+
+.hire-btn{
+    width: 100px;
+    margin: 20px 0 0 0;
+    padding: 8px 15px;
+    background-color: purple;
+    border: 1px solid purple;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hire-btn:hover{
+    background-image: linear-gradient(to top, blue, purple, blue);
+}
+
+.home-img img{
+    width: 100%;
+    margin: 50px 50px 0 0;
+    transform:rotate(6deg);
+}
+
+/* Services Section */
+
+.service-items{
+    display: flex;
+}
+
+.items{
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid gray; */
+    box-shadow: 1px 1px 13px gray;
+    padding: 35px 20px;
+    border-radius: 5px;
+}
+
+.items:hover{
+    box-shadow: 1px 1px 13px rgb(54, 48, 48);
+}
+
+.items a{
+    font-size: 2.5rem;
+    background-color: purple;
+    padding: 25px;
+    color: white;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.items a:hover{
+    color: purple;
+    background-color: white;
+}
+
+.ser-para{
+    /* text-align: center; */
+    color: black;
+    margin: 15px 5px 5px 5px;
+}
+
+/* Skills Section */
+
+.skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 15px;
+    background-color: rgba(193, 238, 241, 0.541);
+    padding: 25px 75px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 13px gray;
+}
+
+.skill-item:hover{
+    box-shadow: 1px 1px 13px rgb(54, 48, 48);
+}
+
+.skill-item img{
+    width: 25%;
+    height: 25%;
+    border-radius: 30%;
+}
+
+/* About Section */
+
+.about{
+    margin: 40px 10px;
+    padding: 35px 15px;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgba(129, 104, 104, 0.198), white, rgba(131, 131, 95, 0.521), rgb(190, 169, 169));
+    box-shadow: 1px 1px 13px gray;
+}
+
+.about-para{
+    font-size: 1.4rem;
+}
+
+/* Contact Section */
+
+#contact{
+    background-color: rgba(0, 0, 0, 0.842);
+    padding: 2px 25px 45px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-info{
+    width: 40%;
+}
+.contact-info p{
+    color: white;
+    padding: 10px 10px;
+    font-size: 0.9rem;
+}
+
+.contact-h{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px;
+    width: 50%;
+}
+
+input{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    margin: 5px 0;
+    background-color: transparent;
+    border: 1px solid rgb(22, 18, 18);
+}
+
+textarea{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    margin: 5px 0;
+    background-color: transparent;
+    border: 1px solid rgb(22, 18, 18);
+}
+
+input[type="submit"]{
+    width: 25%;
+    border-radius: 50px;
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: purple;
+}
+
+label{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 0.7rem;
+}
+
+/* Footer Section */
+
+.footer{
+    background-color: rgb(77, 51, 51);
+    display: flex;
+    padding: 25px 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-para{
+    color: white;
+}
+
+.footer-para a{
+    color: gold;
+    text-decoration: none;
+}
+
+.footer-para a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.footer-icon a{
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-icon a:hover{
+    color: rgb(17, 16, 16);
+}
+
+/* Utility Classes */
+
+.first-h{
+    color: purple;
+    font-weight: 600;
+    font-size: 2.9rem;
+    text-shadow: 2px 2px 5px rgb(116, 86, 86);
+    text-align: center;
+    margin: 15px 15px;
+    text-decoration: black double underline;
+}
+
+.second-h{
+    font-size: 2.9rem;
+    color: purple;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px rgb(116, 86, 86);
+}
+
+.third-h{
+    color: rgb(61, 23, 23);
+    margin: 25px 5px 5px 5px;
+}
+
+/* Top Controller Button  */
+
+#topcontrol{
+    color: white;
+    border-radius: 3px;
+    position: fixed;
+    z-index: 99;
+    right: 14px;
+    bottom: 20px;
+    cursor: pointer;
+    border: 1px solid purple;
+    background-color: purple;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+#topcontrol:hover{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
